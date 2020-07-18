@@ -1,0 +1,47 @@
+body{
+	background-image: url('../../imagenes/fondo.jpg');
+	background-attachment: fixed;
+}
+
+i{
+	color:red;
+}
+
+a{
+	color:black;
+}
+
+.titulo{
+	color:red;
+}
+
+.margen-abajo{
+	margin-bottom:20px;
+}
+
+.box{
+	width:100%;
+	padding: 0px 15px;
+}
+
+.margenes-imagenes{
+	margin-top:10px;
+	margin-bottom:20px;
+}
+
+.imagen-principal{
+	margin-right:10px;
+	margin-bottom:15px;
+}
+
+.ancho-principal{
+	max-width:81%;
+}
+
+.padding-modificado{
+	padding: 15px 15px
+}
+
+.sin-padding{
+	padding: 0px 0px
+}

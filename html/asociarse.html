@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Alta de Socio</title>
+	<link rel="icon" href="../imagenes/index.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="principal/estilo.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="margin-bottom:40px">
+
+		<a class="navbar-brand" href="principal/principal.html">
+			<img src="../imagenes/index.png" alt="logo" style="width:50px">
+		</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="noticias-principal.html">Noticias</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="galeria-fotos.html">Fotos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="asociarse.html">Asociate</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="contacto.html">Contacto</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="jumbotron padding-modificado">
+			<h2><strong>NUEVO SOCIO</strong></h2>
+			<br>
+			<form action="/action_page.php">
+				<div class="row">
+					<div class="col-md-4">
+						<label for="nombre">Nombre</label>
+						<input type="text" class="form-control mb-2 mr-sm-2" id="nombre">
+					</div>
+					<div class="col-md-4">
+						<label for="apellido">Apellido</label>
+						<input type="text" class="form-control mb-2 mr-sm-2" id="apellido">
+					</div>
+					<div class="col-md-4">
+						<label for="fecha-nacimiento">Fecha de nacimiento</label>
+						<input type="date" max="2019-12-31" min="1900-01-01" class="form-control mb-2 mr-sm-2"
+							id="fecha-nacimiento">
+					</div>
+					<div class="col-md-4">
+						<label for="sexo">Sexo</label>
+						<select class="form-control mb-2 mr-sm-2" id="sexo">
+							<option hidden></option>
+							<option>Masculino</option>
+							<option>Femenino</option>
+						</select>
+					</div>
+					<div class="col-md-4">
+						<label for="estado-civil">Estado civil</label>
+						<select class="form-control mb-2 mr-sm-2" id="estado-civil">
+							<option hidden></option>
+							<option>Soltero</option>
+							<option>Casado</option>
+							<option>Divorciado</option>
+							<option>Viudo</option>
+							<option>Unión de hecho</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<label for="pais">País</label>
+						<select class="form-control mb-2 mr-sm-2" id="pais">
+							<option hidden></option>
+							<option>Argentina</option>
+							<option>Brasil</option>
+							<option>Bolivia</option>
+							<option>Chile</option>
+							<option>Colombia</option>
+							<option>Paraguay</option>
+							<option>Venezuela</option>
+						</select>
+					</div>
+					<div class="col-md-4">
+						<label for="estado-provincia">Estado / Provincia</label>
+						<input type="text" class="form-control mb-2 mr-sm-2" id="estado-provincia">
+					</div>
+					<div class="col-md-4">
+						<label for="ciudad">Ciudad</label>
+						<input type="text" class="form-control mb-2 mr-sm-2" id="ciudad">
+					</div>
+					<div class="col-md-4">
+						<label for="domicilio">Domicilio</label>
+						<input type="text" class="form-control mb-2 mr-sm-2" id="domicilio">
+					</div>
+					<div class="col-md-3">
+						<label for="codigo-postal">Código Postal</label>
+						<input type="text" class="form-control mb-2 mr-sm-2" id="codigo-postal">
+					</div>
+					<div class="col-md-5">
+						<label for="email">Email</label>
+						<input type="text" class="form-control mb-2 mr-sm-2" id="email">
+					</div>
+					<div class="col-md-4">
+						<label for="telefono">Teléfono</label>
+						<input type="text" class="form-control mb-2 mr-sm-2" id="telefono">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<label for="foto">Adjuntar foto 4x4</label>
+						<input type="file" class="form-control-file border" id="foto">
+					</div>
+				</div>
+				<br>
+				<button class="btn btn-danger" type="submit" onclick="alert('Datos enviados')">Enviar</button>
+			</form>
+		</div>
+	</div>
+	<footer class="page-footer font-small blue pt-2" style="background-color:rgb(39, 39, 39)">
+		<div class="container-fluid text-center text-md-left">
+			<div class="row">
+				<div class="col-md-12 mt-md-0 mt-3">
+					<p style="text-align:center">
+						<a href="https://www.facebook.com/riverplateoficial" target="_blank"><img
+								src="../../imagenes/facebook-icon.png" width="40px"></a>
+						<a href="https://twitter.com/RiverPlate" target="_blank"><img
+								src="../../imagenes/twitter-icon.png" width="40px"></a>
+						<a href="https://www.instagram.com/riverplate/" target="_blank"><img
+								src="../../imagenes/instagram-icon.png" width="40px"></a>
+						<a href="https://www.youtube.com/user/cariverplatetv" target="_blank"><img
+								src="../../imagenes/youtube-icon.png" width="40px"></a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
